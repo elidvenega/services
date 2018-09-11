@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Developer</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#price">Prices</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+
+  <!--Intro-->
+  <div class="image  text-center">
+    <h1>Developer Services </h1>
+
+
+  </div>
+
+  <section class="container-fluid" id="section4">
+    <div id="about">
+      <h2 class="text-center">Change this Content. Change the world.</h2>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4987/4987602_sa.jpg;maxHeight=640;maxWidth=550" class="img-responsive center-block ">
+          <p class="t text-center">The world of technology is always changing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Container (Pricing for apparel section Section) -->
+
+  <div class="container " ng-app="price">
+    <div id="price">
+      <div class="row" ng-controller="priceDataCtrl">
+        <div class="col-xs-12 col-md-4 text-center" ng-repeat="item in items">
+          <div class="panel-primary panel ">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+           {{item.title}}
+          </h4>
+            </div>
+            <div class="list-group">
+
+              <div class="list-group-item" ng-repeat="text in item.data">
+
+                {{text}}
+              </div>
+            </div>
+
+            <div class="panel-footer ">
+              <a href="{{item.url}}" class="btn btn-primary">{{item.button}}</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container (Contact Section) -->
+
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-sm-5">
+          <form>
+            <div class="form-group">
+              <label>Name: </label>
+              <input class="form-control" type="text" name="" value="" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+              <label>Email: </label>
+              <input class="form-control" type="text" name="" value="" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+              <label>Message: </label>
+              <textarea class="form-control" name="" value="" placeholder="Enter Message"></textarea>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-7 col-sm-7">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer>
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+
+
+          <a href="https://www.facebook.com" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/windowsdev?lang=en" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/developer_paradise/" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/watch?v=ZQRTyeqgEGM" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

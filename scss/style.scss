@@ -1,0 +1,120 @@
+$white: #fff;
+$size: 10px;
+$font: 25px;
+$family: Arial, sans-serif;
+$foot: 50px;
+$color: #2c3e50;
+$zero: 0;
+$list: 15px;
+* {
+  margin: $zero;
+  padding: $zero;
+}
+
+.navbar {
+  margin-bottom: $zero;
+  background-color: $color;
+  border: $zero;
+  font-size: 11px !important;
+  letter-spacing: 4px;
+  opacity: 0.9;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a,
+.navbar .navbar-brand {
+  color: #d5d5d5 !important;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+  color: $white !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+  color: $white !important;
+  background-color: $color !important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.image {
+  background-image: url("https://www.ed2go.com/binaries/content/gallery/ed2go/products/16732.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $zero 20px;
+  line-height: 1.2;
+  opacity: 0.9;
+}
+
+h1 {
+  color: #16222a;
+  padding: $size;
+  font-size: $font + 30px;
+  font-family: $font;
+}
+
+h2 {
+  padding-top: $font + 20px;
+}
+
+p {
+  font-size: $size + 10px;
+  padding: $size;
+}
+//padding for pricing
+.row {
+  padding: $foot;
+}
+
+#contact {
+  background-image: url("https://static.pexels.com/photos/374710/pexels-photo-374710.jpeg");
+  padding: 80px;
+  color: $white;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $zero, 20px;
+  line-height: 1.2;
+}
+
+//price css
+.list-group {
+  font-size: $list;
+  color: $color;
+}
+
+.space {
+  font-size: $list;
+}
+
+.panel-title {
+  font-size: $list;
+  color: $white;
+}
+
+.generic-anchor {
+  font-size: 80px;
+  padding: 40px;
+}
+
+a {
+  color: $white;
+}
+
+footer {
+  background-color: #3a6186;
+}
